@@ -13,10 +13,10 @@ If you look at the following URL https://www.github.com/databyte.json, you will 
 }
 ```
 
-Your task is to create a ring application to do the following:
+Your task is to write some clojure functions to do the following:
 
 * Read the JSON response from the URL and calculate a score for the user's interactions based on the retrieved JSON.
-* The score is calculated from the "type" key value pair, where:
+* The score is calculated from the "type" kv-pair, where:
 
 
 | Event Type | Points |
@@ -36,11 +36,6 @@ You will need [Leiningen][1] 1.7.0 or above installed.
 
 [1]: https://github.com/technomancy/leiningen
 
-## Running
-
-To start a web server for the application, run:
-
-    lein ring server
 
 ## License
 
