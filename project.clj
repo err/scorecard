@@ -7,7 +7,8 @@
                  [compojure "1.1.6"]
                  [clj-http  "0.9.1"]]
   :plugins [[lein-ring "0.8.10"]]
-  :ring {:handler scorecard.handler/app}
+  :ring {:handler scorecard.handler/app
+         :nrepl {:start? true}}
   :profiles
   {:dev {:dependencies [[ring-mock "0.1.5"]
                         [javax.servlet/servlet-api "2.5"]]}})
